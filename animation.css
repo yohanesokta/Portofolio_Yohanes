@@ -1,0 +1,65 @@
+@keyframes anim-co-t{
+	from{
+		width: 0;
+		opacity: 0;
+	}
+	to{
+		width:100%;
+		opacity: 1;
+	}
+}
+@keyframes txt-start{
+	from,30%{
+		width: 0;
+		opacity: 0;
+	}
+	80%{
+		opacity: 1;
+	}
+	to{
+		width: 250px;
+	}
+}
+
+@keyframes conf-start{
+	from,90%{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes elt-start{
+	from{
+		opacity: 0;
+	}
+	90%{
+		opacity: 0;
+		transform: scale(.9);
+	}
+	to{
+		opacity: 1;
+		transform: scale(3);
+	}
+}
+
+@keyframes el-start{
+	from{
+		transform: scale(.3);
+	}
+	30%{
+		transform: scale(.2);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+@keyframes ft-con{
+	from,60%{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}

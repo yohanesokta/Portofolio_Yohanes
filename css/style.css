@@ -1,0 +1,406 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #363543;
+}
+.navbar{
+	position: fixed;
+	display: flex;
+	width: 100%;
+}
+nav{
+	margin: auto;
+	display: flex;
+	width: 90%;
+	padding-top: 10px;
+}
+nav h2{
+	font-size: 16px;
+	color:white;
+	font-family: 'Roboto',sans-serif;
+	padding: 10px;
+}
+.l-nav{
+		margin-top: 10px;
+		margin-left: 100px;
+}
+nav a{
+	text-decoration: none;
+	font-family: 'Roboto',sans-serif;
+	padding: 10px;
+	font-size: 16px;
+}
+.l-nav a{
+	color: gray;
+}
+.active{
+	color: white;
+}
+.r-nav{
+	position: absolute;
+	margin-top: 10px;
+	right: 50px;
+}
+.r-nav a{
+	color: white;
+}
+.navB{
+	width: 100%;
+	height: 60px;
+}
+.co{
+	background-color: #363543 ;
+	position: fixed;
+	transition: 1s ease;
+	width: 100%;
+	overflow: hidden;
+}
+.tx-f{
+	position: absolute;
+	width: 0;
+	overflow: hidden;
+	margin-left: 100px;
+	transition: .8s ease;
+	margin-top: 100px;
+}
+.tx-f h2{
+	color: gray;
+	font-size: 30px;
+	font-family: sans-serif;
+	width: 770px;
+}
+.tx-f h1{
+	width: 770px;
+	color: white;
+	margin-top: 30px;
+	font-size: 70px;
+	font-family: sans-serif;
+}
+.el{
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 80vh;
+}
+.el-f{
+	z-index: -1;
+	width: 70vh;
+	height: 70vh;
+	background-color: #2C2B39;
+	transition: .5s ease;
+	border-radius: 50%;
+	margin: auto;
+	animation: el-start 2s;
+}
+.el-t{
+	z-index: -2;
+	width: 70vh;
+	height: 70vh;
+	border: 2px solid rgba(255, 255, 255, 1.0);
+	transition: .5s ease;
+	transform: scale(.5);
+	border-radius: 50%;
+	margin: auto;
+	animation: elt-start 2s;
+	opacity: 1;
+}
+.co-inf{
+	margin-top:20px;
+	width: 350px;
+	animation: conf-start 2s;
+}
+.co-line{
+	width: 200px;
+	height: 6px;
+	background-color: #FFB900;
+	border-radius: 5px;	
+}
+.co-inf p{
+	margin-top:10px;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: white;
+}
+.tx-t{
+	position: absolute;
+	right: 180px;
+	overflow:hidden;
+	margin-top: 70px;
+	width: 250px;
+	transition: .5s ease;
+	animation: txt-start 2s;
+}
+.tx-t h2{
+	font-size: 20px;
+	font-family: 'Roboto',sans-serif;
+	color: white;
+	width: 250px;
+
+}
+.tx-t p{
+	font-size: 14px;
+	font-family: sans-serif;
+	color: white;
+	margin-top:10px;
+	width: 250px;
+	margin-bottom: 10px;
+}
+.tx-t a{
+	text-decoration: none;
+	font-size: 14px;
+	margin-top:10px;
+	font-family: 'Roboto',sans-serif;
+	color: #FFB900;
+}
+.c2{
+	height: 200vh;
+}
+.co-ft{
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: #2C2B39;
+	z-index: -2;
+}
+.coft1{
+	width: 80%;
+	margin: auto;
+	height: 100vh;
+}
+.coft1 i:first-child{
+	margin-top: 100px;
+	color: white;
+	font-size: 80px;
+}
+.coft1 i:last-child{
+	color:yellow;
+	font-size: 40px;
+	width: 100%;
+	text-align: right;
+}
+.conft-txt{
+	display: flex;
+}
+.conft-txt p{
+	text-align: center;
+	color: #D9D9FF;
+	font-family: 'Roboto',sans-serif;
+	font-size: 20px;
+	padding: 20px 0;
+}
+.co-t{
+	position: fixed;
+	display: none;
+	width: 100%;
+	right: 0;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #363543;
+}
+.co-t h1{
+	text-align: center;
+	font-size: 25px;
+	color: yellow;
+	margin-top:20px;
+	font-family: 'Roboto',sans-serif;
+}
+.co-t-line{
+	width: 80%;
+	height: 2px;
+	background-color: gray;
+	margin: 20px auto;
+}
+.card{
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	margin: 0 auto;
+	border-bottom: 2px solid white;
+}
+.card-main{
+	display: flex;
+	width: 350px;
+	height: 200px;
+}
+.card-f{
+	width: 60px;
+	display: flex;
+}
+.card-f-line{
+	width: 4px;
+	background-color: white;
+	margin: 0 auto;
+	height: 100%;
+}
+.card-f i{
+	position: absolute;
+	font-size: 30px;
+	text-align: center;
+	padding:  15px 12.75px;
+	color: white;
+	background-color: #D9CE00;
+	border-radius: 50%;
+}
+.card-t{
+	margin-left: 10px;
+}
+.card-t p:first-child{
+	font-family: sans-serif;
+	border-radius: 10px;
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 14px;
+	padding: 5px 10px;
+	background-color: gray;
+}
+.card-t h2{
+	font-family: sans-serif;
+	color: white;
+	margin-top: 5px;
+}
+.card-t p:last-child{
+	width: 270px;
+	margin-top: 10px;
+	font-family: sans-serif;
+	color: white;
+}
+.fa-last{
+	position: absolute;
+	font-size: 30px;
+	text-align: center;
+	padding:  15px 17.5px;
+	color: white;
+	background-color: #D9CE00;
+	border-radius: 50%;
+}
+.c-logo{
+	width: 30%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	margin-top: 50px;
+}
+.c-logo i{
+	color: #EAD41C;
+	font-size: 50px;
+}
+.c-logo i:nth-child(2){
+	color: #FF6700;
+}
+.c-logo i:nth-child(3){
+	color: #FF0FAA;
+}
+.c-logo i:nth-child(5){
+	color: #21FF00;
+}
+footer{
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.isi-fot{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-color: #2B2A36;
+}
+@keyframes ndowo{
+	from{
+		height: 0;
+		width: 100px;
+	}
+	50%{
+		height: 100px;
+		width: 100%;
+	}
+	to{
+		width: 100%;
+		height: 100%;
+	}
+}
+@keyframes medun{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+.ft-ls-anim{
+	display:flex;
+	width: 100%;
+	height: 100%;
+}
+.ft-ls-anim h3{
+	display: flex;
+	margin: auto;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+	opacity: 0;
+	animation: ft-ls 2s;
+}
+@keyframes ft-ls{
+	from,10%,to{
+		opacity: 0;
+	}
+	20%,60%{
+		opacity: 1;
+	}
+}
+.ft-con{
+	position: absolute;
+	z-index: 12;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	animation: ft-con 3s;
+}
+.contact{
+	width: 40%;
+	margin-left: 10%;
+	height: 100%;
+	display: flex;
+}
+form{
+	margin: auto;
+	width: 100%;
+}
+.dflex{
+	display: flex;
+}
+form input{
+	padding: 10px 20px;
+	margin:10px;
+	border-radius: 5px;
+}
+textarea{
+	margin: 10px;
+	width: 90%;
+	height: 150px;
+	border-radius: 5px;
+}
+form button{
+	padding: 10px 20px;
+	margin: 10px;
+	font-family: sans-serif,arial;
+	font-weight: bold;
+	margin-bottom:50px;
+}
+.form-logo{
+	width: 50%;
+	height: 80%;
+	display: flex;
+}
+.form-logo img{
+	width: 70%;
+	margin: auto;
+}
