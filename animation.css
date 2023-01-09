@@ -63,3 +63,29 @@
 		opacity: 1;
 	}
 }
+/*skill animation*/
+
+@keyframes bar1{
+	from{
+		width: 20px;
+	}
+	to{
+		width: 290px;
+	}
+}
+@keyframes bar2{
+	from{
+		width: 20px;
+	}
+	to{
+		width:200px;
+	}
+}
+@keyframes bar3{
+	from{
+		width: 20px;
+	}
+	to{
+		width: 250px;
+	}
+}

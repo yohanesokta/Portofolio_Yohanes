@@ -16,14 +16,14 @@ jQuery(document).ready(function($) {
  		let yScroll = window.scrollY;
  		
 
- 		// first from
+ 		// first content
  		if(yScroll >200){
  			co.style.height = '0px';
  		}else{
  			co.style.height = '100vh';
  		}
 
- 		//form two
+ 		//content two
  		if(yScroll > 400){
  			coT.style.display = 'block';
  			coT.style.animation = 'anim-co-t .5s';
@@ -44,4 +44,89 @@ jQuery(document).ready(function($) {
   			$('.ft-ls-anim').css({"display":"flex"})
   		}
  	})
+ 	let navPorto = document.getElementById('navPorto');
+ 	let navSkill = document.getElementById('navSkill');
+ 	let navAbout = document.getElementById('navAbout');
+
+
+
+ 	document.getElementById('close').onclick = function(){
+ 		$('.porto-f').fadeOut(500);
+ 		$('.portofolio').css({"display":"none"});
+ 		$('.about').css({"display":"none"});
+ 		$('.skill-bar').css({"display":"none"});
+ 	}
+
+ 	// make variable
+ 	let po = 0;
+
+ 	// stting porto
+ 	$('.portofolio').css({"display":"none"})
+ 	$('.about').css({"display":"none"})
+ 	$('.skill-bar').css({"display":"none"})
+
+ 	// testing
+
+ 		navPorto.onclick = function(){
+ 			po = 1;
+ 			$('.porto-f').css({"display":"flex"});
+ 			$('.portofolio').fadeIn(500);
+ 		}
+ 		navAbout.onclick = function(){
+ 			$('.porto-f').css({"display":"flex"});
+ 			$('.about').fadeIn(500);
+ 		}
+
+ 		navSkill.onclick = function(){
+ 			$('.porto-f').css({"display":"flex"});
+ 			$('.skill-bar').fadeIn(500);
+ 		}
+
+ 		// next button
+
+ 		document.getElementById('kanan').onclick = function(){
+ 			if(po == 1){
+ 				po = 2;
+ 				Onskill();
+ 			}else if(po == 2){
+ 				po = 3;
+ 				OnAbout();
+ 			}
+ 			else{
+ 				po = 1;
+ 				OnPorto();
+ 			}
+ 		}
+
+ 		function Onskill(){
+ 				$('.skill-bar').fadeIn();
+ 				$('.portofolio').hide();
+ 		}
+ 		function OnAbout(){
+ 			$('.skill-bar').hide();
+ 			$('.about').fadeIn();
+ 		}
+ 		function OnPorto(){
+ 			$('.about').hide();
+ 			$('.portofolio').fadeIn();
+ 		}
+
+ 		// back button jujur agak bingung
+
+ 		document.getElementById('kiri').onclick = function(){
+ 			if(po == 1){
+ 				po = 3;
+ 				$('.portofolio').hide();
+ 				$('.about').fadeIn();
+ 			}else if(po == 2){
+ 				po = 1;
+ 				$('.skill-bar').hide();
+ 				$('.portofolio').fadeIn();
+ 			}
+ 			else{
+ 				po = 2;
+ 				$('.about').hide();
+ 				$('.skill-bar').fadeIn()
+ 			}
+ 		}
 });

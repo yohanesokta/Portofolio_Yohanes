@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="panah_kiri.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.66898373"
+     inkscape:cx="339.32066"
+     inkscape:cy="509.72839"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Lapis 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect31"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.828045"
+       d="M 428.23438,167.02344 166.12109,429.13672 428.23438,691.25 c 19.40381,-20.94351 38.37491,-42.25343 57.60937,-63.3457 L 306.44531,423.76758 482.26953,223.69922 c -16.7242,-20.82093 -35.11962,-37.759 -54.03515,-56.67578 z m 9.99609,52.01367 -183.49609,208.79883 135.58789,154.2832 -157.58789,-157.58789 z"
+       transform="scale(0.26458333)"
+       sodipodi:nodetypes="cccccccccccc" />
+  </g>
+</svg>
