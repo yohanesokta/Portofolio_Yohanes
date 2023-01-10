@@ -1,5 +1,24 @@
 jQuery(document).ready(function($) {
 	// jequery content
+
+if (screen.width < 720) {
+  alert("Maaf , Buka Pada DESKTOP atau jika di mobile pakai mode Lanscape");
+  $('.error').css({"display":"flex"})
+}
+document.addEventListener("orientationchange", function(event){
+    switch(window.orientation) 
+    {  
+        case -90: case 90:
+            /* Device is in landscape mode */
+            break; 
+        default:
+        	 alert("Maaf , Buka Pada DESKTOP atau jika di mobile pakai mode Lanscape");
+ 			 $('.error').css({"display":"flex"})
+    }
+});
+
+
+
 	let co = document.getElementById('conf');
 	let coT = document.getElementById('co-t');
 	let footer = document.querySelector('footer');
@@ -73,11 +92,13 @@ jQuery(document).ready(function($) {
  			$('.portofolio').fadeIn(500);
  		}
  		navAbout.onclick = function(){
+ 			po = 2;
  			$('.porto-f').css({"display":"flex"});
  			$('.about').fadeIn(500);
  		}
 
  		navSkill.onclick = function(){
+ 			po = 3;
  			$('.porto-f').css({"display":"flex"});
  			$('.skill-bar').fadeIn(500);
  		}

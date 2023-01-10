@@ -328,28 +328,6 @@ footer{
 	margin: auto;
 	background-color: #2B2A36;
 }
-@keyframes ndowo{
-	from{
-		height: 0;
-		width: 100px;
-	}
-	50%{
-		height: 100px;
-		width: 100%;
-	}
-	to{
-		width: 100%;
-		height: 100%;
-	}
-}
-@keyframes medun{
-	from{
-		opacity: 1;
-	}
-	to{
-		opacity: 0;
-	}
-}
 .ft-ls-anim{
 	display:flex;
 	width: 100%;
@@ -364,14 +342,6 @@ footer{
 	color: white;
 	opacity: 0;
 	animation: ft-ls 2s;
-}
-@keyframes ft-ls{
-	from,10%,to{
-		opacity: 0;
-	}
-	20%,60%{
-		opacity: 1;
-	}
 }
 .ft-con{
 	position: absolute;
@@ -441,30 +411,6 @@ form button{
 	animation: porto-f 1s;
 	background-color: #363543;
 }
-
-@keyframes porto-f{
-	from{
-		width: 0;
-		height: 0;
-		background-color: #4E4D61;
-		border-radius: 50%;
-	}
-	%50{
-		border-radius: 50%;
-	}
-	90%{
-		width: 70vh;
-		height: 70vh;
-		background-color: #4E4D61;
-		border-radius: 50%;
-	}
-	to{
-		background-color: #363543;
-		width: 100%;
-		height: 100%;
-		border-radius: 0;
-	}
-}
 .porto{
 	width: 100%;
 	height: 100%;
@@ -474,14 +420,6 @@ form button{
 	animation: c-dev 2s;
 	width: 100%;
 	height: 100%;
-}
-@keyframes c-dev{
-	from,60%{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
 }
 .panah-kiri{
 	transition: .3s ease;
@@ -730,4 +668,22 @@ form button{
 	background-color: #FF7700;
 	width: 200px;
 	animation: bar2 3s;
+}
+.error{
+	position: fixed;
+	z-index:20;
+	background-color: black;
+	display: none;
+	width: 100%;
+	height:100%;
+}
+.error h1{
+	color:red;
+	margin:auto;
+	font-family: sans-serif;
+}
+@media only screen and (max-width:600px){
+	.error{
+		display: flex;
+	}
 }

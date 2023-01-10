@@ -1,0 +1,71 @@
+@media only screen and (max-width:1200px){
+/*end mobile query*/
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+.l-nav{
+	display: none;
+}
+.navbar i{
+	display: none;
+}
+.tx-f{
+	margin-left: 10%;
+}
+.co h1{
+	margin-top:70px;
+	font-size: 30px;
+	text-align: left;
+}
+.co h2{
+	display: none;
+}
+.co h1:before{
+	content:"IM ";
+	font-size: 10px;
+	color: gray;
+}
+.card-f i{
+	display: none;
+}
+.card{
+	overflow-x: scroll;
+}
+.c-logo{
+	justify-content: center;
+}
+.c-logo i{
+	margin: 10px;
+}
+.ft-con{
+	display: block;
+}
+.form-logo{
+	display: felx;
+}
+.contact{
+	width: 100%;
+	margin-left: 0;
+}
+.ft-ls-anim h3{
+	display: none;
+}
+form{
+	width: 100%;
+	padding: 0;
+}
+form input,form textarea{
+	outline: none;
+	border: none;
+}
+form button{
+	background-color: green;
+	outline: none;
+	border: none;
+	color: white;
+}
+
+}
